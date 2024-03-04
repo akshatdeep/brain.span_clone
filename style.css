@@ -1,0 +1,977 @@
+
+@font-face {
+    font-family: archi;
+    src: url(./archia-regular-webfont.woff);
+}
+
+
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gilroy-Regular', sans-serif;
+    /* cursor: none; */
+}
+
+/* body{
+    cursor: none;
+    
+} */
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+
+
+.nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 9;
+   
+
+}
+
+
+.nav .nav-part1{
+    height: 100%;
+    width: 20%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* .nav-part1 img{
+    mix-blend-mode: difference;
+} */
+
+
+.nav .nav-part2{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(14, 2, 25); */
+}
+
+.nav-part2 h4{
+    margin: 0 20px;
+    font-size: 0.7vw;
+    font-weight: 700;
+    color: white;
+
+   
+}
+
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+}
+
+
+.page1 video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 2px 0;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+   
+}
+
+
+.nav i{
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    right: 5%;
+    display: none;
+}
+
+
+.page2 h1{
+    position: absolute;
+    top:30%;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 300;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page2 .page2-content{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    margin-top: 50px;
+    /* background-color: aqua; */
+    
+}
+
+
+.page2-content .page2-left{
+    height: 100%;
+    width: 35%;
+    background-color: #f3f2f2;
+    position: relative;
+    overflow: hidden;
+    margin-left: 8vw;
+    border-radius: 20px;
+}
+
+
+.page2-content .page2-left img{
+    position: absolute;
+    /* height: 65%; */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+.page2-left .blur{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(222, 222, 222, 0.376);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 9;
+}
+
+.page2-content .page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: blueviolet; */
+    position: relative;
+    margin-left: 20px;
+}
+
+
+.page2-right h1{
+    position: absolute;
+    top: 0;
+    font-size: 2.5vw;
+    width: 70%;
+    font-weight: 200;
+    font-family: archi;
+}
+
+
+.page2-right p{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 75%;
+    font-weight: 200;
+    color: #444444;
+    word-spacing: 2px;
+    line-height: 22px;
+}
+
+.page2-right button{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border: 1px solid black;
+    /* cursor: none; */
+}
+
+button{
+
+    cursor: none;
+}
+
+
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #444444; */
+    position: relative;
+    background-color: white;
+}
+
+.page3 .page3-content{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+
+.page3-content .page3-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: palevioletred; */
+    position: relative;
+}
+
+
+.page3-left h1{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%; 
+    font-size: 2.5vw;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-family: archi;
+
+}
+
+.page3-left p{
+    position: absolute; 
+    top: 55%;
+    left: 15%;
+    width: 65%;
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    line-height: 22px;
+    color: #444444;
+}
+
+.page3-left button{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 1.1vw;
+    
+}
+
+.page3-content .page3-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.page3-right .page3-video{
+    height: 50%;
+    /* background-color: #444444; */
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    border-radius: 10px;
+}
+
+.page3-video video{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.curser{
+    height: 30px;
+    width: 30px;
+    background-color:white;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+}
+
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./download.png);
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 10vw;
+}
+.boxes{
+    height: 500px;
+    width: 600px;
+    background-color: blue;
+}
+
+.page4 .page4-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.page4-top h1{
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: archi;
+    font-weight: 100;
+    font-size: 1.7vw;
+    color: black;
+}
+
+
+.page4 .helmet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 900px ;
+    width: 100%;
+    text-align: center;
+}
+
+
+.helmet h2{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: archi;
+    color: rgb(39, 39, 39);
+}
+
+.helmet p{
+    margin-top: 40px;
+    word-spacing: 2px;
+    line-height: 22px;
+    color: #444444;
+    font-size: 1.2vw;
+
+}
+
+.helmet button{
+    margin-top: 40px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 1.1vw;
+}
+
+
+.page4 .page4-elem1{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 10vw;
+    /* background-color: crimson; */
+}
+
+.page4-elem1 .elem1-left{
+    height: 90vh;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+   margin-top: 20vw;
+}
+
+
+.elem1-left h3{
+    padding: 8vw 5vw;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-size: 1.8vw;
+    font-family: archi;
+}
+
+
+
+.elem1-right{
+    height: 100%;
+    width: 40%;
+    /* background-color: #444444; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5vw; */
+}
+
+.elem1-right video{
+    width: 68%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+}
+
+.page4 .page4-elem2{
+    height: 50vh;
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+}
+
+.page4-elem2 .elem2-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: seagreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem2-left video{
+    height: 70%;
+    width:60%;
+    /* background: blue; */
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+.elem2-right h3{
+    margin-top: 4.5vw;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-size: 1.6vw;
+    font-family: archi;
+}
+
+.elem2-right button{
+    margin-top: 3vw;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+
+}
+
+
+.elem3{
+    height: 50vh;
+    width: 100%;
+    /* background-color: seagreen; */
+    display: flex;
+    /* margin-top: 10vw; */
+}
+
+
+.elem3 .elem3-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: palevioletred; */
+}
+
+
+.elem3-left h3{
+    padding: 7vw 5vw;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-size: 1.6vw;
+    font-family: archi;
+}
+
+.elem3-right video{
+    height: 80%;
+    width:60%;
+    /* background: blue; */
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    /* padding-left: 10vw; */
+    
+}
+
+
+.elem3-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: seagreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4 .elem4{
+    height: 50vh;
+    width: 100%;
+    /* background-color: seagreen; */
+    display: flex;
+}
+
+
+.elem4 .elem4-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.elem4-left video{
+    height: 80%;
+    width:60%;
+    /* background: blue; */
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    /* padding-left: 10vw; */
+}
+
+
+.elem4 .elem4-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(30, 30, 30);
+     */
+}
+
+
+.elem4-right h3{
+    padding: 5vw 5vw;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-size: 1.6vw;
+    font-family: archi;
+}
+
+
+.elem4-right button{
+    margin: 0 5vw;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-size: cover;
+}
+#page5-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8vw 5vw;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+}
+#page5-info{
+    flex-shrink: 0;
+    width: 30vw;
+    height: 100%;
+    /* background-color: red; */
+    color: #fff;
+}
+#page5-info h2{
+    font-family: archi;
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+#page5-info button{
+    
+    font-size: 1vw;
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.page5-elems{
+    flex-shrink: 0;
+    height: 100%;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.182);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    backdrop-filter: blur(20px);
+    padding: 2vw;
+    margin: 0 3vw;
+
+}
+.page5-elems img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1vw;
+}
+
+.page5-elems h2{
+    font-family: archi;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+#page5 #slider{
+    height: 5px;
+    width: 59%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+#page5 #slider-in{
+    height: 100%;
+    width: 17vw;
+    background-color: black;
+}
+
+
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#decbf5, #f9e6e5);
+    padding-bottom: 9vw;
+}
+
+
+.page6 h1{
+    font-size: 3vw;
+    font-family: archi;
+    font-weight: 100;
+    padding: 8vw 15vw;
+    margin-bottom: 2vw;
+}
+
+
+.page6-content{
+    height: 80vh;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    
+}
+
+
+.page6-content .page6-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+}
+
+
+
+.page6-left p{
+    font-size: 1.7vw;
+    font-family: archi;
+    padding: 0 1vw;
+    position: absolute;
+    left: 13%;
+}
+
+
+.page6-content .page6-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(241, 91, 116); */
+}
+
+
+.page6-right p{
+    padding: 0 10vw;
+    font-size: 1.3vw;
+    color: #626262;
+}
+
+
+.page6-right h6{
+    font-size: 1.2vw;
+    padding: 6vw 10vw;
+}
+
+.page6-line{
+    position: absolute;
+
+    height: 1px;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+
+.page6 .page6-content2{
+    height: 100vh;
+    width: 100%;
+}
+
+.page6-content2 h1{
+    font-size: 1.6vw;
+    padding: 5vw 8vw;
+    font-weight: 700;
+}
+
+
+.page6-box{
+    height: 90vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.page6-box .box{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(247, 247, 247);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    -webkit-mask-position: top;
+    -webkit-mask-repeat: no-repeat;
+    border-radius: 20px;
+    transform: scale(.8);
+    position: relative;
+}
+
+
+.box h4{
+    position: absolute;
+    padding: 2vw 4vw;
+    background-color: pink;
+    top: 10%;
+    font-size: 2vw;
+    font-weight: 500;
+    border-radius: 50px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+
+
+.box p{
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    left: 50%;
+    font-size: 1.4vw;
+    flex-wrap: nowrap;
+    font-family: archi;
+    transform: translateX(-50%);
+}
+
+
+.page6-box .box2{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(247, 247, 247);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    -webkit-mask-position: top;
+    -webkit-mask-repeat: no-repeat;
+    border-radius: 20px;
+    transform: scale(.8);
+}
+
+
+
+
+.box2 h4{
+    position: absolute;
+    padding: 2vw 4vw;
+    background-color: lightgreen;
+    top: 10%;
+    font-size: 2vw;
+    font-weight: 500;
+    border-radius: 50px;
+    left: 40%;
+    transform: translateX(-50%);
+    font-family: archi;
+}
+
+
+.box2 p{
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    left: 50%;
+    font-family: archi;
+    font-size: 1.4vw;
+    flex-wrap: nowrap;
+    transform: translateX(-50%);
+}
+
+.page6-box .box3{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(247, 247, 247);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    -webkit-mask-position: top;
+    -webkit-mask-repeat: no-repeat;
+    border-radius: 20px;
+    transform: scale(.8);
+    
+}
+
+
+.box3 h4{
+    position: absolute;
+    padding: 2vw 4vw;
+    background-color: lightblue;
+    top: 10%;
+    font-size: 2vw;
+    font-weight: 500;
+    border-radius: 50px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+
+
+.box3 p{
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    left: 50%;
+    font-family: archi;
+    font-size: 1.4vw;
+    flex-wrap: nowrap;
+    transform: translateX(-50%);
+}
+
+
+.page6 h3{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.page6 button{
+    margin-top: 20vw;
+    margin-left:10vw;
+    padding: 1vw 2vw;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+
+.page6 h3{
+    position: absolute;
+    bottom: 10%;
+    font-family: archi;
+    font-weight: 200;
+}
+
+
+.page6 img{
+    position: absolute;
+    bottom: 7.8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page7{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page7 .page7-heading{
+    padding-top: 6vw;
+    height: 10vh;
+    width: 100%;
+}
+
+.page7-heading h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: archi;
+    font-size: 1.5vw;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.page7 .page7-content{
+    height: 60vh;
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+}
+
+.page7-content .page7-left{
+    height: 100%;
+    width: 50%;
+}
+
+.page7-left h1{
+    padding: 5vw;
+    font-weight: 100;
+    font-family: archi;
+    font-size: 3.5vw;
+}
+
+.page7-left p{
+    padding-left: 5vw;
+    line-height: 20px;
+    font-family: archi;
+}
+
+
+.page7-content .page7-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page7-right img{
+    height: 60%;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
