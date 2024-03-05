@@ -460,18 +460,45 @@ function page6animation(){
 page6animation()
 
 
-gsap.from(".page6-box .box",{
-    transform:"scale(.8) scale(1) ",
-    scrollTrigger:{
-        // markers:true,
-        start:"top 70%",
-        end:"top 40%",
-        scroller:".main",
-        trigger:".page6-box .box",
-        scrub:true
-    }
-})
+function page6BoxAnination(){
+    gsap.to(".page6-box .box",{
+        transform:"scale(.8) ",
+        scrollTrigger:{
+            // markers:true,
+            start:"top 70%",
+            end:"top 40%",
+            scroller:".main",
+            trigger:".page6-box .box",
+            scrub:true
+        }
+    })
+    
+    gsap.to(".page6-box .box2",{
+        transform:"scale(.8) ",
+        scrollTrigger:{
+            // markers:true,
+            start:"top 70%",
+            end:"top 40%",
+            scroller:".main",
+            trigger:".page6-box .box2",
+            scrub:true
+        }
+    })
+    
+    gsap.to(".page6-box .box3",{
+        transform:"scale(.8) ",
+        scrollTrigger:{
+            // markers:true,
+            start:"top 70%",
+            end:"top 40%",
+            scroller:".main",
+            trigger:".page6-box .box3",
+            scrub:true
+        }
+    })
+}
 
 
+page6BoxAnination()
 
 

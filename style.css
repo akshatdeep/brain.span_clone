@@ -770,7 +770,7 @@ button{
     -webkit-mask-position: top;
     -webkit-mask-repeat: no-repeat;
     border-radius: 20px;
-    transform: scale(.8);
+    transform: scale(1);
     position: relative;
 }
 
@@ -809,7 +809,7 @@ button{
     -webkit-mask-position: top;
     -webkit-mask-repeat: no-repeat;
     border-radius: 20px;
-    transform: scale(.8);
+    transform: scale(1);
 }
 
 
@@ -848,7 +848,7 @@ button{
     -webkit-mask-position: top;
     -webkit-mask-repeat: no-repeat;
     border-radius: 20px;
-    transform: scale(.8);
+    transform: scale(1);
     
 }
 
@@ -900,7 +900,7 @@ button{
 
 .page6 h3{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     font-family: archi;
     font-weight: 200;
 }
@@ -908,7 +908,7 @@ button{
 
 .page6 img{
     position: absolute;
-    bottom: 7.8%;
+    bottom: 12.3%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -916,6 +916,7 @@ button{
 .page7{
     min-height: 100vh;
     width: 100%;
+    padding-bottom: 8vw;
 }
 
 .page7 .page7-heading{
@@ -974,4 +975,82 @@ button{
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+}
+
+.page7-content2{
+    height: 30vh;
+    width: 100%;
+    /* background-color: seagreen; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page7-content2 .page7-content2-box{
+    height: 100%;
+    width: 15%;
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page7-content2-box p{
+    font-size: .7vw;
+    padding-top: 1vw;
+    font-family: achi;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.page7-content2 .page7-content2-box{
+    height: 20vh;
+    width: 15%;
+    /* background: pink; */
+}
+
+.page7-content2 .page7-content2-box{
+    height: 20vh;
+    width: 15%;
+    /* background: pink; */
+}
+
+
+
+.page7-content3{
+    height: 30vh;
+    width: 100%;
+    /* background-color: seagreen; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page7-content3 .box2{
+    height: 25vh;
+    width: 15%;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.page7-content3 .box2 h6{
+    font-size: .7vw;
+    padding-top: 1vw;
+    font-family: achi;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.page7 button{
+    margin-left: 5vw;
+    padding: 1vw 1.5vw;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
 }
